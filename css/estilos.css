@@ -1,0 +1,28 @@
+body{
+  font-family: "Dancing Script";
+  background-color: #02010a;
+  margin: 0;
+}
+
+header{
+  height: 90px;
+  width: 900px;
+  margin: 0 auto;
+  background-color: #5b7989;
+  border-radius: 10px 10px 0 0;
+}
+header h1{
+  padding: 0 20px;
+  color: white;
+  float: left;
+  text-shadow: 2px 2px #02010a;
+}
+.Enlaces a{
+  padding: 30px 20px;
+  color: white;
+  float: right;
+  font-size: 1.5em;
+}
+/* .Enlaces a:nth-child(3){
+  text-decoration: none;
+} */
