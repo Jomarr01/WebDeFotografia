@@ -1,59 +1,149 @@
+@media screen and (min-width: 900px){
+  body{
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  header{
+    display: flex;
+  }
+  header h1{
+    text-align: left;
+  }
+
+  .Enlaces{
+    padding: 30px 20px;
+    float: right;
+  }
+  .Enlaces a{
+    font-size: 1.5em;
+    padding-left: 40px;
+  }
+
+  .Contenedor2{
+    display: flex;
+  }
+  #Imagen2, #Imagen3{
+    max-width: 50%;
+  }
+
+  .PieDePagina{
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 900px){
+  body{
+    width: 100%;
+    margin: 0;
+  }
+
+  header h1{
+    text-align: center;
+  }
+  .Enlaces{
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .Enlaces a{
+    font-size: 1.3em;
+    padding-left: 20px;
+  }
+}
+
+@-webkit-keyframes Slidein{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+
 body{
   font-family: "Dancing Script";
   background-color: #02010a;
-  max-width: 900px;
-  margin: 0 auto;
+  display: grid;
 }
 
 header{
   width: 100%;
   background-color: #5b7989;
   border-radius: 10px 10px 0 0;
-  display: flex;
+  animation: Slidein 1s;
 }
 header h1{
   padding-left: 20px;
   margin-right: auto;
   color: white;
-  text-align: left;
   text-shadow: 2px 2px #02010a;
 }
+
 .Enlaces a{
-  padding: 30px 20px;
   color: white;
   font-weight: bold;
-  float: right;
-  font-size: 1.5em;
 }
-.Enlaces a:nth-child(3){
+.Enlaces a:nth-child(1){
   text-decoration: none;
 }
 
 #Contenido{
   display: grid;
-  width: 100%;
 }
 .Contenedor1{
   background-color: #82c3a6;
   text-align: center;
 }
 #Imagen1 img{
-  width: 90%;
-  margin: 20px auto;
+  width: 100%;
+  margin: 10px auto;
+  box-shadow: 2px 2px 2px #02010a;
 }
 
 .Contenedor2{
   background-color: #d5c75f;
-  display: flex;
-  flex-flow: row nowrap;
   border: 1px solid black;
   text-align: center;
 }
 #Imagen2 img{
-  height: 220px;
+  width: 80%;
   margin: 10px auto;
+  box-shadow: 2px 2px 2px #02010a;
+  transition-property: box-shadow, transform;
+  transition-duration: 1s, 1s;
+}
+#Imagen2 img:hover{
+  transform: rotate(10deg);
+  border: 2px solid black;
+  box-shadow: 2px 2px 2px #82c3a6;
 }
 #Imagen3 img{
-  width: 330px;
+  width: 80%;
   margin: 10px auto;
+  box-shadow: 2px 2px 2px #02010a;
+  transition-property: box-shadow, transform;
+  transition-duration: 1s, 1s;
+}
+#Imagen3 img:hover{
+  transform: translate(5px, -20px);
+  border: 2px solid black;
+  box-shadow: 2px 2px 2px #82c3a6;
+}
+figcaption a{
+  color: black;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.PieDePagina{
+  width: 100%;
+  background-color: #C6d5c5;
+  border-radius: 0 0 10px 10px;
+}
+.PieDePagina div{
+  min-width: 25%;
+  margin: 10px;
 }
