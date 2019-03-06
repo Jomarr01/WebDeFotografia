@@ -1,0 +1,136 @@
+@media screen and (min-width: 900px){
+  body{
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  header{
+    display: flex;
+  }
+  header h1{
+    text-align: left;
+  }
+
+  .Enlaces{
+    padding: 30px 20px;
+    float: right;
+  }
+  .Enlaces a{
+    font-size: 1.5em;
+    padding-left: 40px;
+  }
+
+  .Contenedor{
+    display: flex;
+    flex-flow: row wrap;
+  }
+  #Imagen1, #Imagen2, #Imagen3, #Imagen4, #Imagen5, #Imagen6{
+    max-width: 33.33%;
+  }
+
+  .PieDePagina{
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 900px){
+  body{
+    width: 100%;
+    margin: 0;
+  }
+
+  header h1{
+    text-align: center;
+  }
+  .Enlaces{
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .Enlaces a{
+    font-size: 1.3em;
+    padding-left: 20px;
+  }
+}
+
+@-webkit-keyframes Slidein{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+
+body{
+  font-family: "Dancing Script";
+  background-color: #02010a;
+  display: grid;
+}
+
+header{
+  width: 100%;
+  background-color: #5b7989;
+  border-radius: 10px 10px 0 0;
+  animation: Slidein 1s;
+}
+header h1{
+  padding-left: 20px;
+  margin-right: auto;
+  color: white;
+  text-shadow: 2px 2px #02010a;
+}
+
+.Enlaces a{
+  color: white;
+  font-weight: bold;
+}
+.Enlaces a:nth-child(3){
+  text-decoration: none;
+}
+
+#Contenido{
+  display: grid;
+}
+.Contenedor{
+  background-color: #d5c75f;
+  text-align: center;
+}
+#Imagen1 img{
+  width: 100%;
+  margin: 10px auto;
+  box-shadow: 2px 2px 2px #02010a;
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+#Imagen2 img, #Imagen4 img, #Imagen6 img{
+  width: 100%;
+  margin: 10px auto;
+  box-shadow: 2px 2px 2px #02010a;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+#Imagen3 img{
+  width: 100%;
+  margin: 10px auto;
+  box-shadow: 2px 2px 2px #02010a;
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
+}
+#Imagen5 img{
+  width: 100%;
+  margin: 10px auto;
+  box-shadow: 2px 2px 2px #02010a;
+}
+
+.PieDePagina{
+  width: 100%;
+  background-color: #C6d5c5;
+  border-radius: 0 0 10px 10px;
+}
+.PieDePagina div{
+  min-width: 25%;
+  margin: 10px;
+}
