@@ -31,6 +31,9 @@
   .PieDePagina{
     display: flex;
   }
+  #Contacto, #Terminos, #Redes, #Derechos{
+    max-width: 25%;
+  }
 }
 
 @media screen and (max-width: 900px){
@@ -75,6 +78,9 @@ header{
   background-color: #5b7989;
   border-radius: 10px 10px 0 0;
   animation: Slidein 1s;
+  -o-animation: Slidein 1s;
+  -moz-animation: Slidein 1s;
+  -webkit-animation: Slidein 1s;
 }
 header h1{
   padding-left: 20px;
@@ -131,6 +137,6 @@ header h1{
   border-radius: 0 0 10px 10px;
 }
 .PieDePagina div{
-  min-width: 25%;
+  width: 25%;
   margin: 10px;
 }

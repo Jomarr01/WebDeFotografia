@@ -30,6 +30,9 @@
   .PieDePagina{
     display: flex;
   }
+  #Contacto, #Terminos, #Redes, #Derechos{
+    max-width: 25%;
+  }
 }
 
 @media screen and (max-width: 900px){
@@ -74,6 +77,9 @@ header{
   background-color: #5b7989;
   border-radius: 10px 10px 0 0;
   animation: Slidein 1s;
+  -o-animation: Slidein 1s;
+  -moz-animation: Slidein 1s;
+  -webkit-animation: Slidein 1s;
 }
 header h1{
   padding-left: 20px;
@@ -107,6 +113,7 @@ header h1{
   background-color: #d5c75f;
   border: 1px solid black;
   text-align: center;
+  min-height: 400px;
 }
 #Imagen2 img{
   width: 80%;
@@ -117,6 +124,8 @@ header h1{
 }
 #Imagen2 img:hover{
   transform: rotate(10deg);
+	-ms-transform: rotate(10deg);
+	-webkit-transform: rotate(10deg);
   border: 2px solid black;
   box-shadow: 2px 2px 2px #82c3a6;
 }
@@ -129,6 +138,8 @@ header h1{
 }
 #Imagen3 img:hover{
   transform: translate(5px, -20px);
+	-ms-transform: translate(5px, -20px);
+	-webkit-transform: translate(5px, -20px);
   border: 2px solid black;
   box-shadow: 2px 2px 2px #82c3a6;
 }
@@ -144,6 +155,6 @@ figcaption a{
   border-radius: 0 0 10px 10px;
 }
 .PieDePagina div{
-  min-width: 25%;
+  width: 25%;
   margin: 10px;
 }
